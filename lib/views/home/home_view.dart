@@ -1,4 +1,4 @@
-import 'package:cursomms/home/fatia_alugueis_ativos.dart';
+import 'package:cursomms/views/home/fatia_alugueis_ativos.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

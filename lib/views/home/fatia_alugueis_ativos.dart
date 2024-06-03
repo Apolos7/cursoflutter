@@ -1,4 +1,5 @@
 import 'package:cursomms/components/botao_navegacao_widget.dart';
+import 'package:cursomms/views/home/veiculos_para_reserva_view.dart';
 import 'package:flutter/material.dart';
 
 class FatiaAlugeisAtivos extends StatelessWidget {
@@ -18,10 +19,10 @@ class FatiaAlugeisAtivos extends StatelessWidget {
       ),
       child: Column(
         children: [
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Column(
+              const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
@@ -42,7 +43,9 @@ class FatiaAlugeisAtivos extends StatelessWidget {
                   ),
                 ],
               ),
-              BotaoNavegacaoWidget()
+              BotaoNavegacaoWidget(
+                onTap: () => _navegarTelaVeiculosParaReserva(context),
+              )
             ],
           ),
           Container(
@@ -83,5 +86,10 @@ class FatiaAlugeisAtivos extends StatelessWidget {
         ],
       ),
     );
+  }
+
+  void _navegarTelaVeiculosParaReserva(BuildContext context) {
+    Navigator.push(context,
+        MaterialPageRoute(builder: (context) => VeiculosParaReservaView()));
   }
 }

@@ -1,4 +1,4 @@
-import 'package:cursomms/home/home_view.dart';
+import 'package:cursomms/views/home/home_view.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatelessWidget {
